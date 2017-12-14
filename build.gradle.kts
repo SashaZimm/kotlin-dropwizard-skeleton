@@ -29,7 +29,7 @@ dependencies {
 }
 
 task<Wrapper>("wrapper") {
-    gradleVersion = "4.3.1"
+    gradleVersion = "4.4"
 }
 
 val fatJar = task<Jar>("fatJar") {
