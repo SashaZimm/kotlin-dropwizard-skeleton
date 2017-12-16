@@ -7,7 +7,7 @@ repositories {
 
 plugins {
     application
-    kotlin("jvm") version "1.2.0"
+    kotlin("jvm") version "1.2.10"
 }
 
 application {
@@ -17,7 +17,7 @@ application {
 val dropwizardVersion by project
 
 dependencies {
-    compile(kotlin("stdlib", "1.2.0"))
+    compile(kotlin("stdlib", "1.2.10"))
     compile("io.dropwizard:dropwizard-core:$dropwizardVersion")
 
     (testCompile("org.jetbrains.spek:spek-api:1.1.5") as ModuleDependency).apply { exclude(group = "org.jetbrains.kotlin", module = "kotlin-stdlib") }
