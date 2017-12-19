@@ -1,1 +1,9 @@
-defaultName: fromTestFile
+swaggerConfiguration:
+  applicationVersion: "0.0.1"
+  schemes:
+    - "http"
+  host: "localhost:8080"
+  basePath: "/"
+  resourcePackage: "resource.name"
+  scanForResources: true
+
