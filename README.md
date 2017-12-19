@@ -13,6 +13,7 @@ Feedback welcome!
 - (Kotlin)
 - Gradle (Kotlin Dsl)
 - Spek (Kotlin Specification Framework) / AssertJ
+- Swagger
 
 You can import the project into IntelliJ via the build.gradle.kts file.
 
@@ -31,4 +32,9 @@ To spin up the Dropwizard application:
 The standard Dropwizard ports are used:
 
 - 8080 for application resources
-- 8081 admin 
+- 8081 admin
+
+The OpenApi Specification (Swagger specification) is located at:
+
+    http:localhost:8080/swagger.yaml 
+    http:localhost:8080/swagger.json 
