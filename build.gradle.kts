@@ -7,7 +7,7 @@ repositories {
 
 plugins {
     application
-    kotlin("jvm") version "1.2.10"
+    kotlin("jvm") version "1.2.20"
 }
 
 application {
@@ -17,7 +17,7 @@ application {
 val dropwizardVersion by project
 
 dependencies {
-    compile(kotlin("stdlib", "1.2.10"))
+    compile(kotlin("stdlib", "1.2.20"))
     compile("io.dropwizard:dropwizard-core:$dropwizardVersion")
     compile("io.swagger:swagger-jersey2-jaxrs:1.5.17")
 
