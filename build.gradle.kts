@@ -1,4 +1,5 @@
 import org.gradle.jvm.tasks.Jar
+import org.jetbrains.kotlin.gradle.plugin.KotlinPluginWrapper
 
 repositories {
     mavenCentral()
@@ -17,7 +18,7 @@ application {
 val dropwizardVersion by project
 
 dependencies {
-    compile(kotlin("stdlib", "1.2.20"))
+    compile(kotlin("stdlib", plugins.getPlugin(KotlinPluginWrapper::class.java).kotlinPluginVersion))
     compile("io.dropwizard:dropwizard-core:$dropwizardVersion")
     compile("io.swagger:swagger-jersey2-jaxrs:1.5.17")
 
